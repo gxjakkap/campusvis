@@ -31,10 +31,12 @@
         <div class="container-fluid">
             <?php include 'components/navbar.component.php'?>
             <div class="px-4 py-5 my-5 text-center">
-                <h1 class="display-5 fw-bold">ผลการค้นหา</h1>
+                <h1 class="display-5 fw-bold">ผลการค้นหา - "<?php echo $query?>"</h1>
                 <div class="col-lg-6 mx-auto">
                 <?php
+                    $resultsAvailable = FALSE;
                     if (!is_null(@$campusSearched)){
+                        $resultsAvailable = TRUE;
                         echo '<table class="table">
                         <thead>
                             <tr>
@@ -51,6 +53,7 @@
                             </table>';
                     }
                     if (!is_null(@$facultySearched)){
+                        $resultsAvailable = TRUE;
                         echo '<table class="table">
                         <thead>
                             <tr>
@@ -67,6 +70,7 @@
                             </table>';
                     }
                     if (!is_null(@$depSearched)){
+                        $resultsAvailable = TRUE;
                         echo '<table class="table">
                         <thead>
                             <tr>
@@ -81,6 +85,9 @@
                         }
                         echo '</tbody>
                             </table>';
+                    }
+                    if (!$resultsAvailable){
+                        echo '<p class="mt-3">ไม่พบผลการค้นหา</p>';
                     }
                 ?>
                     <?php mysqli_close($connection); ?>

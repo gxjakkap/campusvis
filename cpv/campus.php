@@ -28,7 +28,8 @@
     <body>
         <div class="container-fluid">
             <?php include 'components/navbar.component.php'; ?>
-            <div class="py-5 my-5 text-center">
+            <!-- <button type="button" class="btn btn-light" id="print">Light</button> -->
+            <div class="py-5 my-5 text-center" id="main">
                 <h1 class="display-5 fw-bold"><?php echo $pcampusName[0] ?></h1>
                 <div class="col-lg-6 mx-auto">
                     <h3 class="lead mb-4">รายชื่อคณะ</h3>
@@ -62,5 +63,26 @@
         </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.umd.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.min.js" integrity="sha512-pZmE8nx/gdufIRZ9DdgsipK4ocMbdq6zU2epbECb4/iwu9bHfN3aDYmOiVNC8SHk90uWi03o1ziB6JEd6/3VQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.3.1/rasterizeHTML.allinone.min.js" integrity="sha512-8oluEnt1t+gexGfDJb99W//rKC167lnwXrpJYdmYt+hUlptb6zuGORyZsTQD2+5vcNlyli8iP8V4j+IUNwNlMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <script>
+           /*  const pb = document.getElementById('print')
+            /* 
+            pb.addEventListener('click', () => {
+                print(document.getElementById('main'))
+            }) 
+            window.jsPDF = window.jspdf.jsPDF;
+            const doc = new jsPDF()
+            
+            const content = document.getElementById('main')
+
+            pb.addEventListener('click', () => {
+                doc.addHTML(document.body, () => {
+                doc.save('file.pdf')
+            })
+            }) */
+
+        </script>
     </body>
 </html>
