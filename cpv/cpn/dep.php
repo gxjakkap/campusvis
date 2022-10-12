@@ -149,9 +149,9 @@
 
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                     <h1 class="mt-3 mb-5">แก้ไขข้อมูลสาขาวิชา</h1>
-                    <div class="w-full">
+                    <div class="w-full position-relative">
                         <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addModal">เพิ่มสาขาวิชา</button>
-                        <table class="table">
+                        <table class="table" id="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
@@ -214,7 +214,6 @@
                 document.getElementById('deleteHiddenIdBox').value = id
                 document.getElementById('deleteConfirmationText').innerHTML = `ยืนยันที่จะลบ${name}จาก${facname}?`
             })
-
         </script>
     </body>
 </html>

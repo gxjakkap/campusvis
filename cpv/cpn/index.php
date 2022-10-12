@@ -141,7 +141,7 @@
 
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                     <h1 class="mt-3 mb-5">แก้ไขคณะ</h1>
-                    <div class="w-full">
+                    <div class="w-full position-relative">
                         <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addModal">เพิ่มคณะ</button>
                         <table class="table">
                             <thead>
